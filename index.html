@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <div class="vert-text">
+            <div class="p-img">
+                <img src="quby-pentol.gif" alt="Logo"/>
+            </div>
+            <h1 id="typer-size">                
+                <!-- TEXTS -->
+                <span id="typed"></span>
+                <div id="typed-strings">
+                    <p>Hi, Ms Saniah</p>
+                    <p>Roses are red</p>
+                    <p>Your eyes are brown</p>
+                    <p>Can I take you out?</p>
+                    <p>and show you around town?</p>
+                </div>
+                <!-- TEXTS ENDS -->
+            </h1>
+            <!-- TITLE -->
+            <h3>SCROLL DOWN | 👋⬇</h3>
+            <a href="#contacts" class="scroll-down nav-link"></a>
+        </div>
+    </header>
+    
+    <!-- FOOTER  -->
+    <footer id="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <h3 class="zayn"></h3>
+                    <hr class="style17">
+                    <!-- FORMS -->
+                    <form>
+                        <p>Would you like to go on a date with me? Pretty please </p>
+                        <div>
+                            <label>
+                                <button type="button" id="yes-button">Yes</button>
+                            </label>
+                            <label>
+                                <button type="button" id="no-button">No</button>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- New Section -->
+    <section id="hidden-section" style="display: none;">
+        <div class="container">
+            <h2>Coolio. Please select your availability.</h2>
+            <p>I would suggest Saturday around 2p.m. but if you're not free, feel free to give me your date and time</p>
+
+            <!-- New Form for Date Input -->
+            <form id="date-form">
+                <label for="availability-date">Select Date:</label>
+                <input type="date" id="availability-date" name="availability-date">
+                
+                <label for="options">Choose an Option:</label>
+                <select id="options" name="options" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="option1">Hiking Date (You can bring your fruit kid!!)</option>
+                    <option value="option2">Cinema with Night Driving</option>
+                    <option value="option3">Go-Karting and Chill</option>
+                    <option value="option4">Others...</option>
+                </select>
+
+                <button type="button" onclick="myFunction()">Submit</button>
+            </form>
+        </div>
+
+        <!-- Scroll Down Link at the Bottom of New Section -->
+        <a href="#header" class="scroll-down nav-link">Back to Top</a>
+    </section>
+
+    <!-- Scripts -->
+    <script>
+        function myFunction() {
+          alert("Kena screenshot kak. Database belum sempat belajar nak submit2 haha..(or you can just text me)");
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" async defer></script>
+</body>
+</html>

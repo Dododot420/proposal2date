@@ -1,0 +1,307 @@
+body {
+    font-family: 'Comfortaa', cursive;
+    background: #B24592;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F15F79, #B24592);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F15F79, #B24592); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
+    padding-bottom: 1em;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  a {
+    color: #33A9B7;
+  }
+  
+  #typer-size {
+    font-size: 40px;
+  }
+  
+  a:hover, a:focus {
+    color: #00E4FF;
+    text-decoration: none;
+  }
+  
+  header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    color: white;
+  }
+  
+  header #particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  header .vert-text {
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  header .vert-text h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+  }
+  
+  header .vert-text .scroll-down {
+    display: block;
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    color: #fff;
+    transform: translate(0, -50%);
+    transition: opacity 0.5s;
+  }
+  
+  header .vert-text .scroll-down:hover {
+    opacity: 0.5;
+  }
+  
+  header .vert-text .scroll-down::after {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+  }
+  
+  header .vert-text .scroll-down::before {
+    position: absolute;
+    top: -22px;
+    left: -22px;
+    z-index: -1;
+    content: '';
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    opacity: 0;
+    animation: sdb 3s infinite;
+    box-sizing: border-box;
+  }
+  
+  #contacts {
+    margin: 0;
+    padding: 0;
+    background: #224;
+    width: 100%;
+    color: #fff;
+    transition: all 1.7s ease;
+    min-height: 100vh; /* Ensure the footer covers at least the viewport height */
+    position: relative; /* Make sure the footer is positioned relative */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    text-align: center;
+  }
+  
+  #contacts:hover {
+    background: #fa3380;
+    color: #fff;
+  }
+  
+  #contacts .social {
+    padding-bottom: 20px;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+  }
+  
+  form {
+    margin-top: 70px;
+    width: 100%;
+  }
+  
+  button {
+    border-radius: 100px;
+    color: #fff;
+    margin: 0 10px; /* Add spacing between buttons */
+    padding: 10px;
+    height: 35px;
+    width: 80px; /* Smaller width for buttons */
+    text-align: center;
+    outline: none;
+    background: #fa3380;
+    border: 1px solid #eee;
+    box-shadow: 4px 5px 10px 0px rgba(46,61,73,0.15);
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background: purple;
+  }
+  
+  .p-img {
+    text-align: center;
+    position: relative;
+    top: -70px;
+  }
+  
+  img {
+    z-index: 100;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    max-width: 100%;
+  }
+  
+  hr.style17 {
+    border: none;
+    border-top: 1px solid pink;
+    text-align: center;
+    width: 250px;
+    margin: 10px auto; /* Center horizontally */
+  }
+  
+  @keyframes sdb {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    60% {
+        box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+  
+  /* Make the hidden-section fill the viewport height */
+  #hidden-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #hidden-section h2 {
+    font-size: 1.8rem; /* Slightly smaller for mobile */
+    margin-bottom: 20px; /* Add spacing below heading */
+  }
+  
+  #hidden-section p {
+    font-size: 1rem; /* Standardize text size */
+    padding: 0 10px; /* Add some side padding */
+  }
+  
+  #date-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  #date-form select, #date-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  #date-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #fa3380;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #date-form button:hover {
+    background-color: purple;
+  }
+  
+  /* Media Query for iPhone 14 Resolution */
+  @media only screen and (max-width: 1170px) {
+    #typer-size {
+        font-size: 2.5rem; /* Scale down the text size for smaller screens */
+    }
+  
+    header .vert-text h1 {
+        font-size: 3rem; /* Adjust header text size */
+    }
+  
+    .p-img img {
+        width: 120px; /* Adjust logo size for mobile */
+        height: 120px; 
+    }
+  
+    button {
+        width: 70px; /* Reduce button width */
+        padding: 8px; /* Adjust padding for touch targets */
+        font-size: 0.9rem; /* Ensure button text is readable */
+    }
+  
+    h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
+        font-size: 1.5rem; /* Adjust heading sizes */
+    }
+  
+    #contacts {
+        padding: 20px; /* Add padding for better spacing */
+    }
+  
+    #hidden-section {
+      display: none; /* Initially hidden */
+      position: fixed; /* Fixes the section in place */
+      top: 0; /* Aligns to the top */
+      left: 0; /* Aligns to the left */
+      width: 100vw; /* Full viewport width */
+      height: 100vh; /* Full viewport height */
+      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+      color: white; /* Text color */
+      z-index: 1000; /* Ensure it appears above other elements */
+      overflow: auto; /* Allow scrolling if content overflows */
+      display: flex; /* Center content vertically and horizontally */
+      justify-content: center;
+      align-items: center;
+  }
+  
+  
+    
+    #hidden-section.full-page {
+      display: flex; /* Display as flex when visible */
+      position: fixed; /* Fix to viewport */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.8); /* Optional: background color with opacity */
+      color: white;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000; /* Ensure it's on top of other elements */
+    }
+    
+    
+    
+  
+    #date-form label, #date-form select, #date-form input, #date-form button {
+        max-width: 280px; /* Slightly reduce max-width */
+    }
+  }
+  
