@@ -266,22 +266,8 @@ body {
     }
   
     #hidden-section {
-      display: none; /* Initially hidden */
-      position: fixed; /* Fixes the section in place */
-      top: 0; /* Aligns to the top */
-      left: 0; /* Aligns to the left */
-      width: 100vw; /* Full viewport width */
-      height: 100vh; /* Full viewport height */
-      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
-      color: white; /* Text color */
-      z-index: 1000; /* Ensure it appears above other elements */
-      overflow: auto; /* Allow scrolling if content overflows */
-      display: flex; /* Center content vertically and horizontally */
-      justify-content: center;
-      align-items: center;
-  }
-  
-  
+      display: none; /* Initially hide the section */
+    }
     
     #hidden-section.full-page {
       display: flex; /* Display as flex when visible */
